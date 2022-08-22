@@ -1,0 +1,10 @@
+{
+  // words - list of words to be always considered correct
+  "words": ["subdir"],
+  "ignorePaths": [
+    "node_modules/**",
+    "package.json",
+    "package-lock.json",
+    "karma.conf.json"
+  ]
+}
