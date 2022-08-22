@@ -2,6 +2,14 @@
 . "$(dirname "$0")/_/husky.sh"
 # npm test
 # npm run lint
+
+# Apply prettier
 npx pretty-quick --staged
+
+# Linting
 npm run lint
+
+# Spellcheck
+git diff --name-only --cached --diff-filter=ACM | npx cspell --no-must-find-files --file-list stdin
+
 exit 0
